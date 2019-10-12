@@ -1,0 +1,19 @@
+body {
+    height: 100%;
+    min-height: 100vh;
+}
+h1 {
+    font-size: 24px;
+}
+h2 {
+    font-size: 18px;
+}
+h3 {
+    font-size: 16px;
+}
+h4,
+h5,
+h6,
+p {
+    font-size: 14px;
+}
