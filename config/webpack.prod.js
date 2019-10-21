@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -10,6 +11,7 @@ const root = path.resolve(__dirname, '../');
 module.exports = WebpackMerge(baseConfig, {
   output: {
     path: path.resolve(root, 'dist'),
+    publicPath: '/',
     filename: 'index.[hash:10].js'
   },
   module: {
@@ -33,6 +35,12 @@ module.exports = WebpackMerge(baseConfig, {
     ]
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env': JSON.stringify({
+        NODE_ENV: process.env.NODE_ENV,
+        BASE_API_URL: ""
+      })
+    }),
     new CleanWebpackPlugin(),
     new UglifyJsPlugin({
       parallel: true
