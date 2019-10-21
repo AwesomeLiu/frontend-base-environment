@@ -12,12 +12,17 @@ npm install
 
 开发环境：热更新
 ```
-npm run dev
+npm start
+```
+
+测试环境：打包输出文件
+```
+npm run build
 ```
 
 生产环境：打包输出文件
 ```
-npm run prod
+npm run build:prod
 ```
 
 ## 搭建环境
