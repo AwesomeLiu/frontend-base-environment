@@ -65,7 +65,7 @@ selenium-debug.log
 *.sln
 ```
 
-> *建议在此基础上添加 package-lock.json 的过滤*
+> *建议在此基础上添加 package-lock.json 和 yarn.lock 的过滤*
 
 ### 构建目录结构
 

@@ -3,7 +3,7 @@ module.exports = {
     "postcss-import": {},
     "postcss-url": {},
     "autoprefixer": {
-      overrideBrowserslist: ['> 0%', 'ie 9']
+      overrideBrowserslist: ['> 2%', 'ie 9']
     }
   }
 };
