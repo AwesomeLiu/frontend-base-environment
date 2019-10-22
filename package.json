@@ -6,9 +6,7 @@
   "scripts": {
     "start": "npm run start:dev",
     "start:dev": "cross-env NODE_ENV=development webpack-dev-server --config config/webpack.dev.js --open",
-    "build": "npm run build:test",
-    "build:test": "cross-env NODE_ENV=production webpack --config config/webpack.test.js",
-    "build:uat": "cross-env NODE_ENV=production webpack --config config/webpack.uat.js",
+    "build": "npm run build:prod",
     "build:prod": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js"
   },
   "keywords": [],

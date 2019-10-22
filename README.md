@@ -15,14 +15,9 @@ npm install
 npm start
 ```
 
-测试环境：打包输出文件
-```
-npm run build
-```
-
 生产环境：打包输出文件
 ```
-npm run build:prod
+npm run build
 ```
 
 ## 搭建环境
@@ -202,24 +197,8 @@ npm install clean-webpack-plugin --save-dev
 
 * **.babelrc**
 
-```json
-{
-  "presets": [
-    ["@babel/preset-env", { "modules": false }]
-  ]
-}
-```
+详见 [.babelrc](../.babelrc);
 
 * **.postcssrc.js**
 
-```js
-module.exports = {
-  "plugins": {
-    "postcss-import": {},
-    "postcss-url": {},
-    "autoprefixer": {
-      overrideBrowserslist: ['> 0%', 'ie 9']
-    }
-  }
-};
-```
+详见 [.postcssrc.js](../.postcssrc.js);

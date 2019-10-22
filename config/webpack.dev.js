@@ -43,6 +43,6 @@ module.exports = webpackMerge(baseConfig, {
       })
     }),
     new webpack.NamedModulesPlugin(),
-    new webpack.HotModuleReplacementPlugin()
+    // new webpack.HotModuleReplacementPlugin()
   ]
 });
